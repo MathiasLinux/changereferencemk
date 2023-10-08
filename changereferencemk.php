@@ -28,13 +28,13 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
-class Changeproduct extends Module
+class Changereferencemk extends Module
 {
     protected $config_form = false;
 
     public function __construct()
     {
-        $this->name = 'changereference_mk';
+        $this->name = 'changereferencemk';
         $this->tab = 'administration';
         $this->version = '1.0.0';
         $this->author = 'Mathias KLIEM';
@@ -54,22 +54,4 @@ class Changeproduct extends Module
 
         $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
     }
-
-    /**
-     * Don't forget to create update methods if needed:
-     * http://doc.prestashop.com/display/PS16/Enabling+the+Auto-Update
-     */
-    /*public function install()
-    {
-        return parent::install() &&
-            $this->registerHook('header') &&
-            $this->registerHook('displayBackOfficeHeader') &&
-            $this->registerHook('displayHome');
-    }
-
-    public function uninstall()
-    {
-        return parent::uninstall();
-    }*/
-
 }
