@@ -36,7 +36,7 @@ class Changereferencemk extends Module
     {
         $this->name = 'changereferencemk';
         $this->tab = 'administration';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'Mathias KLIEM';
         $this->need_instance = 0;
 
