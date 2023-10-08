@@ -34,7 +34,7 @@ class Changeproduct extends Module
 
     public function __construct()
     {
-        $this->name = 'changeproduct';
+        $this->name = 'changereference_mk';
         $this->tab = 'administration';
         $this->version = '1.0.0';
         $this->author = 'Mathias KLIEM';
@@ -47,8 +47,8 @@ class Changeproduct extends Module
 
         parent::__construct();
 
-        $this->displayName = $this->l('Change Product');
-        $this->description = $this->l('Change the order reference to id_order');
+        $this->displayName = $this->l('Change Reference MK');
+        $this->description = $this->l('Change the order reference to the order id');
 
         $this->confirmUninstall = $this->l('You\'re sure that you wan\'t to delete this awesome module');
 
@@ -59,7 +59,7 @@ class Changeproduct extends Module
      * Don't forget to create update methods if needed:
      * http://doc.prestashop.com/display/PS16/Enabling+the+Auto-Update
      */
-    public function install()
+    /*public function install()
     {
         return parent::install() &&
             $this->registerHook('header') &&
@@ -70,6 +70,6 @@ class Changeproduct extends Module
     public function uninstall()
     {
         return parent::uninstall();
-    }
+    }*/
 
 }
